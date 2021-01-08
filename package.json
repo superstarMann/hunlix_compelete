@@ -33,7 +33,7 @@
       "react-app/jest"
     ]
   },
-  "homepage": "https://superstarMann.github.io/hunlix_compolete",
+  "homepage": "https://modest-torvalds-b2b5e0.netlify.app/",
   "browserslist": {
     "production": [
       ">0.2%",
