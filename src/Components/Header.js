@@ -22,6 +22,8 @@ const Header = styled.header`
 const List = styled.ul`
  display: flex;
  width: 100%;
+ @media screen and (max-width: 32rem ) {
+    }
 `
 
 const Item = styled.li`
@@ -31,6 +33,9 @@ const Item = styled.li`
  text-align: center;
  border-bottom: 3px solid ${props => (props.current ? "#3498db" : "transparent")}; 
  transition: border-bottom 0.5s ease-in-out;
+ @media screen and (max-width: 32rem ) {
+     
+}
 `//transparent = 투명색
 
 const Slink = styled(Link)`
@@ -46,6 +51,9 @@ const RogoBox =styled.span`
  height: 50px;
  justify-content: center;
  align-items: center;
+ @media screen and (max-width: 32rem ) {
+     display: none;
+}
 `;
 
 const Rogo = styled.span`
@@ -58,6 +66,9 @@ const MailItem = styled.li`
   width: 100%;
   height: 50px;
  padding-top: 20px;
+ @media screen and (max-width: 32rem ) {
+     display: none;
+    }
 `;
 
 const Mail = styled.span`

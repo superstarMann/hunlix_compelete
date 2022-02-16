@@ -12,6 +12,7 @@ const Container = styled.div`
  width: 100%;
  margin-top: 5px;
  padding: 50px;
+
 `;
 
 const Backdrop = styled.div`
@@ -26,6 +27,9 @@ const Backdrop = styled.div`
  filter: blur(3px);
  background-position: center center;
  z-index: 0;
+ @media screen and (max-width: 32rem ) {
+    width:100%;
+}
 `
 const Content = styled.div`
  display: flex;
@@ -33,6 +37,10 @@ const Content = styled.div`
  height: 100%;
  z-index: 1;
  position: relative;
+ @media screen and (max-width: 32rem ) {
+     display: flex;
+     flex-direction: column;
+  }
 `;
 
 const Cover = styled.div`
@@ -41,12 +49,20 @@ const Cover = styled.div`
  background-image: url(${props => props.bgImage});
  background-size: cover;
  border-radius: 5px;
+ @media screen and (max-width: 32rem ) {
+     width: 100%;
+     height: 100%;
+     padding-bottom: 300px;
+    }
 `;
 
 const Data = styled.div`
  width: 70%;
  height: 100%;
  margin: 0 20px;
+ @media screen and (max-width: 32rem ) {
+     margin: 10px 0;
+    }
 `;
 
 const Title = styled.h3`
@@ -86,7 +102,7 @@ const Video = styled.div`
 const DetailPresenter = ({result, error, loading}) => 
    loading ? (
     <>
-    <Helmet><title>Loading | Hunlix</title></Helmet>
+    <Helmet><title>{`Hunlix`}</title></Helmet>
    <Loader/>
    </>
    ) : (<>

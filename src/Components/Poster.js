@@ -7,6 +7,7 @@ import { Link } from "react-router-dom"
 
 const Container = styled.div`
  font-size: 12px;
+
 `;
 
 const Image = styled.div`
@@ -15,6 +16,7 @@ const Image = styled.div`
   background-size: cover;
   background-position: center center;
   transition: opacity 0.1s linear;
+  
 `;
 
 const Rating = styled.span`

@@ -19,6 +19,10 @@ margin-top: 20px;
 display: grid;
 grid-template-columns: repeat(auto-fill, 125px);
 grid-gap: 25px;
+@media screen and (max-width: 32rem) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5px;
+ }
 `;
 
 const Section = ({title, children}) => (
