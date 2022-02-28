@@ -25,7 +25,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "depoly": "gh-pages -d build",
-    "predepoly": "yarn run build"
+    "pre:depoly": "yarn run build"
   },
   "eslintConfig": {
     "extends": [
